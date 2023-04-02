@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FiltersActivity">
+
+    <EditText
+        android:id="@+id/przebiegOd"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:hint="@string/przebiegOd"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/filter"
+        app:layout_constraintEnd_toStartOf="@+id/przebiegDo"
+        app:layout_constraintStart_toStartOf="@+id/filter"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/przebiegNazwa"
+        app:layout_constraintBottom_toTopOf="@+id/przebiegOd"
+        app:layout_constraintStart_toStartOf="@+id/przebiegOd"
+        app:layout_constraintTop_toBottomOf="@+id/rodzajPaliwa" />
+
+    <EditText
+        android:id="@+id/przebiegDo"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/przebiegDo"
+        app:layout_constraintEnd_toEndOf="@+id/filter"
+        app:layout_constraintStart_toEndOf="@+id/przebiegOd"
+        app:layout_constraintTop_toTopOf="@+id/przebiegOd" />
+
+    <Spinner
+        android:id="@+id/rodzajPaliwa"
+        style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:entries="@array/listaPaliwa"
+        app:layout_constraintBottom_toTopOf="@+id/textView17"
+        app:layout_constraintEnd_toEndOf="@+id/przebiegDo"
+        app:layout_constraintStart_toStartOf="@+id/textView17"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+    <EditText
+        android:id="@+id/pojemnoscOd"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:hint="@string/pojemnoscOd"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/textView16"
+        app:layout_constraintEnd_toStartOf="@+id/pojemnoscDo"
+        app:layout_constraintStart_toStartOf="@+id/przebiegOd"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <EditText
+        android:id="@+id/pojemnoscDo"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/pojemnoscDo"
+        app:layout_constraintEnd_toEndOf="@+id/przebiegDo"
+        app:layout_constraintStart_toEndOf="@+id/pojemnoscOd"
+        app:layout_constraintTop_toTopOf="@+id/pojemnoscOd" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/typNadwozia"
+        app:layout_constraintBottom_toTopOf="@+id/typNadwozia"
+        app:layout_constraintStart_toStartOf="@+id/typNadwozia"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/typNadwozia"
+        style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_weight=".70"
+        android:entries="@array/listaTypNadwozia"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="@+id/markaPojazdu"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/marka"
+        app:layout_constraintBottom_toTopOf="@+id/markaPojazdu"
+        app:layout_constraintStart_toStartOf="@+id/markaPojazdu"
+        app:layout_constraintTop_toBottomOf="@+id/typNadwozia" />
+
+    <Spinner
+        android:id="@+id/markaPojazdu"
+        style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:entries="@array/listaMarka"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="@+id/cenaDo"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/cenaNazwa"
+        app:layout_constraintBottom_toTopOf="@+id/cenaOd"
+        app:layout_constraintStart_toStartOf="@+id/cenaOd"
+        app:layout_constraintTop_toBottomOf="@+id/markaPojazdu" />
+
+    <EditText
+        android:id="@+id/cenaOd"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:hint="@string/cenaOd"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/textView15"
+        app:layout_constraintEnd_toStartOf="@+id/cenaDo"
+        app:layout_constraintStart_toStartOf="@+id/textView15"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/cenaDo"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/cenaDo"
+        app:layout_constraintEnd_toEndOf="@+id/pojemnoscDo"
+        app:layout_constraintStart_toEndOf="@+id/cenaOd"
+        app:layout_constraintTop_toTopOf="@+id/cenaOd" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/pojemnoscNazwa"
+        app:layout_constraintBottom_toTopOf="@+id/pojemnoscOd"
+        app:layout_constraintStart_toStartOf="@+id/pojemnoscOd"
+        app:layout_constraintTop_toBottomOf="@+id/cenaOd" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/rodzajPaliwa"
+        app:layout_constraintBottom_toTopOf="@+id/rodzajPaliwa"
+        app:layout_constraintStart_toStartOf="@+id/textView17"
+        app:layout_constraintTop_toBottomOf="@+id/pojemnoscOd" />
+
+    <Button
+        android:id="@+id/filter"
+        android:layout_width="300dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/teal_200"
+        android:text="Filtruj"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.95" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

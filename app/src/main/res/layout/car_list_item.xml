@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:id="@+id/parent">
+
+    <TextView
+        android:id="@+id/typ_nadwozia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="typ_nadwozia"
+        app:layout_constraintBottom_toTopOf="@+id/rodzaj_paliwa"
+        app:layout_constraintEnd_toStartOf="@+id/marka_pojazdu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/marka_pojazdu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/typ_nadwozia"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="0dp"
+        android:layout_toEndOf="@+id/typ_nadwozia"
+        android:text="marka_pojazdu"
+        app:layout_constraintEnd_toStartOf="@+id/cena"
+        app:layout_constraintStart_toEndOf="@+id/typ_nadwozia"
+        app:layout_constraintTop_toTopOf="@+id/typ_nadwozia" />
+
+    <TextView
+        android:id="@+id/cena"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/marka_pojazdu"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="0dp"
+        android:layout_toEndOf="@+id/marka_pojazdu"
+        android:text="cena"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/marka_pojazdu"
+        app:layout_constraintTop_toTopOf="@+id/marka_pojazdu" />
+
+    <TextView
+        android:id="@+id/pojemnosc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/typ_nadwozia"
+        android:layout_alignStart="@+id/typ_nadwozia"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="20dp"
+        android:text="pojemnosc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/przebieg"
+        app:layout_constraintTop_toTopOf="@+id/przebieg" />
+
+    <TextView
+        android:id="@+id/rodzaj_paliwa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/marka_pojazdu"
+        android:layout_alignStart="@+id/marka_pojazdu"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="20dp"
+        android:text="rodzaj_paliwa"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/typ_nadwozia"
+        app:layout_constraintTop_toBottomOf="@+id/typ_nadwozia" />
+
+    <TextView
+        android:id="@+id/przebieg"
+        android:layout_width="56dp"
+        android:layout_height="15dp"
+        android:layout_below="@+id/cena"
+        android:layout_alignStart="@+id/cena"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="20dp"
+        android:text="przebieg"
+        app:layout_constraintEnd_toStartOf="@+id/pojemnosc"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toEndOf="@+id/rodzaj_paliwa"
+        app:layout_constraintTop_toTopOf="@+id/rodzaj_paliwa" />
+</RelativeLayout>

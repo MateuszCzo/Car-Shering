@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Car_Shering</string>
+
+    <!--login/register-->
+    <string name="userid">number</string>
+    <!--Filtry-->
+    <string name="typNadwozia">Typ nadwozia</string>
+    <string name="marka">Marka pojazdu</string>
+    <string name="cenaNazwa">Cena</string>
+    <string name="cenaOd">Cena od</string>
+    <string name="cenaDo">Cena do</string>
+    <string name="pojemnoscNazwa">Pojemność skokowa</string>
+    <string name="pojemnoscOd">Pojemność od</string>
+    <string name="pojemnoscDo">Pojemność do</string>
+    <string name="rokProdukcji">Rok produkcji</string>
+    <string name="rodzajPaliwa">Rodzaj paliwa</string>
+    <string name="przebiegNazwa">Przebieg</string>
+    <string name="przebiegOd">Przebieg od</string>
+    <string name="przebiegDo">Przebieg do</string>
+    <string-array name="listaTypNadwozia">
+        <item>Sedan</item>
+        <item>Coupe</item>
+        <item>Van</item>
+        <item>Pickup</item>
+        <item>Kompakt</item>
+    </string-array>
+    <string-array name="listaMarka">
+        <item>BMW</item>
+        <item>Audi</item>
+        <item>Citroen</item>
+        <item>Hyundai</item>
+        <item>Ford</item>
+    </string-array>
+    <string-array name="listaPaliwa">
+        <item>Benzyna</item>
+        <item>Gaz</item>
+        <item>Diesel</item>
+        <item>Elektryk</item>
+    </string-array>
+
+    <string name="user_id">null</string>
+</resources>
